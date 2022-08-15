@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+html, body { 
+    /* --color-1: #a8e6cf;
+    --color-2: #dcedc1; 
+    --color-3: #ffd3b6; 
+    --color-4: #ffaaa5; 
+    --color-5: #ff8b94; */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 50px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://media4.giphy.com/media/5xtDarpTZP1hgRgReLK/giphy.gif?cid=ecf05e4715z8s9ockvd3bs0cspvoy0oud8e4fmjxdy1e2l0w&rid=giphy.gif&ct=g");
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.42);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.3px);
+    -webkit-backdrop-filter: blur(6.3px);
+    border: 1px solid rgba(255, 255, 255, 0.64);
+    padding: 50px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-3);
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.dice-img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.div-btn {
+   position: absolute;
+   top: 100%;
+   margin: 10px 0 0 28%;
+}
+#tossBtn {
+    background-color: yellow;
+    box-shadow: 0 13px #999
+}
+#rollBtn {
+    background-color: teal;
+    box-shadow: 0 13px #999
+}
+
+#toss-Btn:active, #rollBtn:active, #resetBtn:active {
+    background-color: #1F2937;
+    box-shadow: 0 5px #666;
+    transform: translateY(19px);
+  }
+
+#resetBtn {
+    background-color: red;
+    box-shadow: 0 13px #999
+}
+
+button:focus {
+    outline: none;
+}
+#rollBtn {
+    display: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
+.animation {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding: 0;
+    border-radius: 10px ;
+    border: 5px solid white;
+}
+.declare {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translateY(-50%);
+    text-align: center;
+   text-shadow: 5px 5px 5px rgba(0,0,0,0.75);
+    color: whitesmoke;
+}
+
